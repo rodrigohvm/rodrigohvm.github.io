@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodrigo Morales | Operations, process and AI projects</title>
+<meta name="description" content="Production Engineer with seven years in operations, logistics and e-commerce. In 2026 he built a management system, a website and a game by directing AI coding tools.">
+<meta property="og:title" content="Rodrigo Morales | Operations, process and AI projects">
+<meta property="og:description" content="Production Engineer with seven years in operations, logistics and e-commerce. In 2026 he built a management system, a website and a game by directing AI coding tools.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rodrigohvm.github.io/">
+<meta property="og:site_name" content="Rodrigo Morales">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://rodrigohvm.github.io/img/sistema-dashboard.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="1079">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://rodrigohvm.github.io/">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="alternate" hreflang="pt-BR" href="pt/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="lang" aria-label="Language"><span aria-current="true">English</span><a href="pt/" lang="pt-BR" hreflang="pt-BR">Português</a></nav>
+
+  <header class="intro">
+    <p class="eyebrow">Operations, process and AI projects</p>
+    <h1>Rodrigo Morales</h1>
+    <p class="lead measure">Production Engineer. I spent seven years in operations, logistics and e-commerce. In 2026 I started building the systems I used to only specify, using AI to write the code.</p>
+    <p class="method measure">I don't write code. I define the problem, write the business rules and acceptance criteria, and direct Claude Code and Codex, which write the code. Then I test it, have it audited, and answer for what goes to production.</p>
+    <p class="contact"><span>rodrigohvm@gmail.com</span><span>Serra, ES, Brazil</span><span>Portuguese, advanced English, fluent Spanish</span></p>
+  </header>
+
+  <section aria-label="Management system figures">
+    <div class="figures">
+      <div><strong>3,575</strong><span>automated unit tests</span></div>
+      <div><strong>260</strong><span>end-to-end tests</span></div>
+      <div><strong>150</strong><span>logged product decisions</span></div>
+      <div><strong>4</strong><span>audits, one of them external</span></div>
+    </div>
+    <p class="source">Vila Pinheiro management system, as checked on 24 Nov 2026.</p>
+  </section>
+
+  <section class="project" id="system">
+    <div class="project-head">
+      <p class="eyebrow">Project 1 · in production</p>
+      <h2>Management system for a small lodge</h2>
+      <p class="measure">Vila Pinheiro Cabanas is a four-cabin lodge in Santa Teresa, Brazil, which I co-founded. Guests were served over WhatsApp, and the records were spread across spreadsheets and separate tools. Today a single system answers guests, keeps the bookings, alerts the team and issues the tax invoices.</p>
+    </div>
+    <div class="project-body">
+      <aside class="ficha" aria-label="Project sheet">
+        <dl>
+          <div class="row"><dt>Status</dt><dd><span class="status">In production</span></dd></div>
+          <div class="row"><dt>My role</dt><dd>Concept, requirements, business rules, testing and validation</dd></div>
+          <div class="row"><dt>Period</dt><dd>Jul to Nov 2026, ongoing</dd></div>
+          <div class="row"><dt>Users</dt><dd>Lodge staff and guests</dd></div>
+          <div class="row"><dt>Integrations</dt><dd>WhatsApp and Instagram (official Meta API), national e-invoicing (NFS-e), Pix instant payments, Google Calendar and Drive</dd></div>
+          <div class="row"><dt>Technology</dt><dd>Node.js, Express, Railway, GitHub Actions</dd></div>
+          <div class="row"><dt>Built with</dt><dd>Claude Code and Codex</dd></div>
+        </dl>
+      </aside>
+      <div class="text">
+        <div class="block">
+          <h3>What the system does</h3>
+          <ul class="measure">
+            <li>Answers guests on WhatsApp and Instagram Direct through the official Meta API: triage, price list, booking flow, cabin access codes and installment reminders.</li>
+            <li>One CRM brings together the dashboard, conversations, bookings, customers, campaigns, calendar, operations, finance and tax.</li>
+            <li>Collects Pix instant payments and confirms them automatically with the bank.</li>
+            <li>Issues electronic service invoices (NFS-e) through the national API. The first invoice was authorized on 12 Nov 2026.</li>
+            <li>Includes guest digital check-in, cleaning rosters and a daily backup with tested restore.</li>
+          </ul>
+        </div>
+        <div class="callout measure">
+          <h3>The decision I would highlight</h3>
+          <p>The guest-facing bot does not use AI. It did at first, and in August 2026 I removed it. Text rules handle the forms at zero cost per message and never make up an answer for a guest. AI stayed where it pays off most: writing the code, auditing it and producing monthly reports.</p>
+        </div>
+        <div class="block">
+          <h3>How quality was ensured</h3>
+          <ul class="measure">
+            <li>Three test suites on every change: 3,575 unit tests, 60 screen tests and 260 end-to-end tests. They run on synthetic data, with no real messages, charges or invoices.</li>
+            <li>Four audits between 29 Oct and 21 Nov 2026, one of them external. In the 12 Nov review, 18 families of defects were reproduced and fixed.</li>
+            <li>150 numbered, dated product decisions, with a rule that none is reversed without asking.</li>
+            <li>One release per day, batched, after review.</li>
+            <li>I led the company's approval as a Meta Tech Provider and moved the business number to the API without interrupting service.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Timeline</h3>
+          <dl class="timeline">
+            <dt>20 Jul 2026</dt><dd>First version of the code</dd>
+            <dt>27 Oct 2026</dt><dd>Instagram messaging live</dd>
+            <dt>03 Nov 2026</dt><dd>WhatsApp live on the lodge's business number</dd>
+            <dt>12 Nov 2026</dt><dd>First NFS-e invoice authorized through the API</dd>
+          </dl>
+        </div>
+        <div class="shots">
+          <figure>
+            <img src="img/sistema-dashboard.jpg" alt="Dashboard screen with a month-by-month occupancy chart and a calendar of nights sold per cabin" width="1400" height="1079" loading="lazy">
+            <figcaption>Dashboard, Numbers tab: occupancy month by month and nights sold per cabin. Demo data; the interface is in Portuguese.</figcaption>
+          </figure>
+          <figure>
+            <img src="img/sistema-bot.jpg" alt="Bot panel showing the booking-flow messages organized by step" width="1300" height="1102" loading="lazy">
+            <figcaption>Bot panel: the booking-flow messages, step by step. Staff edit the wording without touching code.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="website">
+    <div class="project-head">
+      <p class="eyebrow">Project 2 · live</p>
+      <h2>Vila Pinheiro website</h2>
+      <p class="measure">The site exists to bring visitors into a WhatsApp conversation. It has no booking engine and no online payment, by design: the conversation closes the sale.</p>
+    </div>
+    <div class="project-body">
+      <aside class="ficha" aria-label="Project sheet">
+        <dl>
+          <div class="row"><dt>Status</dt><dd><span class="status">Live</span></dd></div>
+          <div class="row"><dt>Address</dt><dd><a href="https://vilapinheiro.com.br">vilapinheiro.com.br</a></dd></div>
+          <div class="row"><dt>My role</dt><dd>Strategy, content, requirements, review and release</dd></div>
+          <div class="row"><dt>Period</dt><dd>Aug to Nov 2026, maintained</dd></div>
+          <div class="row"><dt>Technology</dt><dd>Python (generator), static HTML, CSS and JS, Cloudflare</dd></div>
+        </dl>
+      </aside>
+      <div class="text">
+        <ul class="measure">
+          <li>Pages are generated by scripts and published on Cloudflare. Staff edit text and photos through a panel, with no code.</li>
+          <li>352 automated checks run before each release.</li>
+          <li>Lighthouse on mobile, measured on the live site in October 2026: performance 97, SEO 100, accessibility 96 to 97.</li>
+          <li>In the week of 16 to 22 Nov 2026 the site had 264 visits and 22 form enquiries, up from 205 and 19 the week before.</li>
+          <li>Scheduled routines produce a weekly bulletin and a monthly traffic report.</li>
+        </ul>
+        <figure>
+          <img src="img/site.webp" alt="A-frame wooden cabin with a deck, surrounded by forest" width="1600" height="900" loading="lazy">
+          <figcaption>The site's opening photo.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" id="game">
+    <div class="project-head">
+      <p class="eyebrow">Project 3 · in development</p>
+      <h2>ClaudeWorld</h2>
+      <p class="measure">A 2D pixel-art village for organizing work with Claude Code: each project is a house, each request is a quest and each agent is a character. On top of that sits an RPG with skills, combat, dungeons and an economy.</p>
+    </div>
+    <div class="project-body">
+      <aside class="ficha" aria-label="Project sheet">
+        <dl>
+          <div class="row"><dt>Status</dt><dd><span class="status">In development</span></dd></div>
+          <div class="row"><dt>My role</dt><dd>Product and art direction, requirements, approval of previews</dd></div>
+          <div class="row"><dt>Period</dt><dd>Since 13 Nov 2026</dd></div>
+          <div class="row"><dt>Version</dt><dd>0.26, 18 Nov 2026</dd></div>
+          <div class="row"><dt>Technology</dt><dd>JavaScript, Canvas and Node.js, no dependencies</dd></div>
+          <div class="row"><dt>Where it runs</dt><dd>Locally; no public address</dd></div>
+        </dl>
+      </aside>
+      <div class="text">
+        <ul class="measure">
+          <li>Playing does not call AI. Only work quests call Claude Code, through a bridge that runs on the same computer.</li>
+          <li>The art is original and drawn in code, with no purchased assets.</li>
+          <li>23 documented rounds between 13 and 18 Nov 2026, from version 0.3 to 0.26.</li>
+          <li>683 automated tests as of round 0.23.</li>
+          <li>Each round follows a contract of requirements that must not regress, and ships only after I approve the preview.</li>
+        </ul>
+        <figure>
+          <img src="img/jogo.jpg" alt="ClaudeWorld game screen: a pixel-art square with a fountain, guild hall, market stalls, characters, a minimap and a combat panel" width="1280" height="700" loading="lazy">
+          <figcaption>The village square in version 0.15: guides on the left, minimap and combat panel on the right. The interface is in Portuguese.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="project" aria-label="Background">
+    <div class="project-head">
+      <p class="eyebrow">Before that</p>
+      <h2>Where the working style comes from</h2>
+    </div>
+    <div class="career">
+      <article>
+        <p class="when">2018 – 2021</p>
+        <h3>Dog27 · logistics and e-commerce</h3>
+        <p>E-commerce sales up 106% in one year. Sold on Mercado Livre and Amazon, with VTEX and the Bling ERP. Built picking and packing from scratch and led a team of up to 6.</p>
+      </article>
+      <article>
+        <p class="when">2021 – 2022</p>
+        <h3>Showroom Cláudia Pinheiro · consulting</h3>
+        <p>Implemented the Bling ERP from scratch: process mapping, setup and training. Built the P&amp;L and a KPI routine.</p>
+      </article>
+      <article>
+        <p class="when">2022 – today</p>
+        <h3>Vila Pinheiro Cabanas · co-founder</h3>
+        <p>Business plan, construction, vendors, cash flow, pricing and tax. It is where the three projects on this page were born.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p class="measure">B.Sc. in Production Engineering, UCL (Faculdade do Centro Leste), Brazil, 2019. Available for remote work, or on site in Greater Vitória, Brazil.</p>
+    <p class="contact"><span>rodrigohvm@gmail.com</span></p>
+    <p class="version">Updated November 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
